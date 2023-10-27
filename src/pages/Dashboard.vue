@@ -1,7 +1,7 @@
 <template>
-    <Navbar />
-    <h5>Dashboard</h5>
-    <p>Test</p>
+  <Navbar />
+  <h5>Dashboard</h5>
+  <p>Test</p>
 </template>
 
 <script setup>
