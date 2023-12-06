@@ -25,10 +25,10 @@
         <p>Sering sakit pinggang?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="sakitPinggang" label="Yes" name="radio-sakitPinggang" value="yes" />
+            <Radio v-model="sakitPinggang" label="Yes" name="radio-sakitPinggang" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="sakitPinggang" label="No" name="radio-sakitPinggang" value="no" />
+            <Radio v-model="sakitPinggang" label="No" name="radio-sakitPinggang" value="0" />
           </div>
         </div>
       </div>
@@ -36,10 +36,10 @@
         <p>Kencing di malam hari lebih sering?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="kencingMalam" label="Yes" name="radio-kencingMalam" value="yes" />
+            <Radio v-model="kencingMalam" label="Yes" name="radio-kencingMalam" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="kencingMalam" label="No" name="radio-kencingMalam" value="no" />
+            <Radio v-model="kencingMalam" label="No" name="radio-kencingMalam" value="0" />
           </div>
         </div>
       </div>
@@ -52,10 +52,10 @@
         <p>Perlu mengejan saat awal kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="mengejan" label="Yes" name="radio-mengejan" value="yes" />
+            <Radio v-model="mengejan" label="Yes" name="radio-mengejan" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="mengejan" label="No" name="radio-mengejan" value="no" />
+            <Radio v-model="mengejan" label="No" name="radio-mengejan" value="0" />
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@
         <p>Inkontensia urin/beser/susah menahan ketika ingin kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="inkontensia" label="Yes" name="radio-inkontensia" value="yes" />
+            <Radio v-model="inkontensia" label="Yes" name="radio-inkontensia" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="inkontensia" label="No" name="radio-inkontensia" value="no" />
+            <Radio v-model="inkontensia" label="No" name="radio-inkontensia" value="0" />
           </div>
         </div>
       </div>
@@ -79,10 +79,10 @@
         <p>Urin lemah saat kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="urinLemah" label="Yes" name="radio-urinLemah" value="yes" />
+            <Radio v-model="urinLemah" label="Yes" name="radio-urinLemah" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="urinLemah" label="No" name="radio-urinLemah" value="no" />
+            <Radio v-model="urinLemah" label="No" name="radio-urinLemah" value="0" />
           </div>
         </div>
       </div>
@@ -90,10 +90,10 @@
         <p>Nyeri saat kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="nyeriKencing" label="Yes" name="radio-nyeriKencing" value="yes" />
+            <Radio v-model="nyeriKencing" label="Yes" name="radio-nyeriKencing" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="nyeriKencing" label="No" name="radio-nyeriKencing" value="no" />
+            <Radio v-model="nyeriKencing" label="No" name="radio-nyeriKencing" value="0" />
           </div>
         </div>
       </div>
@@ -106,10 +106,10 @@
         <p>Urin menetes setelah kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="urinMenetes" label="Yes" name="radio-urinMenetes" value="yes" />
+            <Radio v-model="urinMenetes" label="Yes" name="radio-urinMenetes" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="urinMenetes" label="No" name="radio-urinMenetes" value="no" />
+            <Radio v-model="urinMenetes" label="No" name="radio-urinMenetes" value="0" />
           </div>
         </div>
       </div>
@@ -117,10 +117,10 @@
         <p>Terdapat darah ketika kencing?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="darahUrin" label="Yes" name="radio-darahUrin" value="yes" />
+            <Radio v-model="darahUrin" label="Yes" name="radio-darahUrin" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="darahUrin" label="No" name="radio-darahUrin" value="no" />
+            <Radio v-model="darahUrin" label="No" name="radio-darahUrin" value="0" />
           </div>
         </div>
       </div>
@@ -133,10 +133,10 @@
         <p>Kencing terasa tidak tuntas?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="kencingTidakTuntas" label="Yes" name="radio-kencingTidakTuntas" value="yes" />
+            <Radio v-model="kencingTidakTuntas" label="Yes" name="radio-kencingTidakTuntas" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="kencingTidakTuntas" label="No" name="radio-kencingTidakTuntas" value="no" />
+            <Radio v-model="kencingTidakTuntas" label="No" name="radio-kencingTidakTuntas" value="0" />
           </div>
         </div>
       </div>
@@ -144,10 +144,10 @@
         <p>Urin tidak keluar sama sekali?</p>
         <div class="flex">
           <div class="flex mr-2 mt-2 items-center">
-            <Radio v-model="urinTidakKeluar" label="Yes" name="radio-urinTidakKeluar" value="yes" />
+            <Radio v-model="urinTidakKeluar" label="Yes" name="radio-urinTidakKeluar" value="1" />
           </div>
           <div class="flex mt-2 items-center">
-            <Radio v-model="urinTidakKeluar" label="No" name="radio-urinTidakKeluar" value="no" />
+            <Radio v-model="urinTidakKeluar" label="No" name="radio-urinTidakKeluar" value="0" />
           </div>
         </div>
       </div>
@@ -181,16 +181,16 @@ const isFormBiodata = ref(true);
 const nama = ref("");
 const usia = ref("");
 const alamat = ref("");
-const sakitPinggang = ref("");
-const kencingMalam = ref("");
-const mengejan = ref("");
-const inkontensia = ref("");
-const urinLemah = ref("");
-const nyeriKencing = ref("");
-const urinMenetes = ref("");
-const darahUrin = ref("");
-const kencingTidakTuntas = ref("");
-const urinTidakKeluar = ref("");
+const sakitPinggang = ref("0");
+const kencingMalam = ref("0");
+const mengejan = ref("0");
+const inkontensia = ref("0");
+const urinLemah = ref("0");
+const nyeriKencing = ref("0");
+const urinMenetes = ref("0");
+const darahUrin = ref("0");
+const kencingTidakTuntas = ref("0");
+const urinTidakKeluar = ref("0");
 
 // function nextstep
 function nextStep() {
@@ -200,6 +200,42 @@ function nextStep() {
 // function submit
 function submit() {
   isFormBiodata.value = true;
-  router.push("/hasil");
+
+  sessionStorage.setItem("nama", nama.value ?? "");
+  sessionStorage.setItem("usia", usia.value ?? 0);
+  sessionStorage.setItem("alamat", alamat.value ?? "");
+
+  fetchKNN();
 }
+
+
+function fetchKNN() {
+  const formdata = new FormData();
+  formdata.append("umur", usia.value);
+  formdata.append("sakit_pinggang", sakitPinggang.value);
+  formdata.append("mengejan", mengejan.value);
+  formdata.append("urin_lemah", urinLemah.value);
+  formdata.append("urin_menetes", urinMenetes.value);
+  formdata.append("kencing_tidak_tuntas", kencingTidakTuntas.value);
+  formdata.append("nokturia", kencingMalam.value);
+  formdata.append("inkonsia_urin", inkontensia.value);
+  formdata.append("nyeri_saat_kencing", nyeriKencing.value);
+  formdata.append("darah_dalam_urin", darahUrin.value);
+  formdata.append("urin_tidak_keluar_sama_sekali", urinTidakKeluar.value);
+
+  var requestOptions = {
+    method: 'POST',
+    body: formdata,
+  };
+
+  fetch("http://127.0.0.1:5000/api/v1/predict", requestOptions)
+    .then(response => response.json())
+    .then(result => {
+      const hasil = result.response.status;
+      sessionStorage.setItem("hasil", hasil);
+      router.push("/hasil");
+    })
+    .catch(error => console.log('error', error));
+}
+
 </script>

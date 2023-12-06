@@ -7,15 +7,15 @@
         <table class="text-sm">
           <tr>
             <td>Nama</td>
-            <td> : Steven</td>
+            <td id="nama_pasien"> : -</td>
           </tr>
           <tr>
             <td>Usia</td>
-            <td> : 57</td>
+            <td id="usia_pasien"> : -</td>
           </tr>
           <tr>
             <td>Alamat</td>
-            <td> : Hongkong</td>
+            <td id="alamat_pasien"> : -</td>
           </tr>
         </table>
         <div class=" mt-3 mx-auto">
@@ -62,11 +62,35 @@ const isGreenBackground = ref(false)
 const textHasil = ref('')
 
 
+
 onMounted(() => {
-  isRedBackground.value = false
-  isYellowBackground.value = true
-  isGreenBackground.value = false
-  textHasil.value = 'Ringan'
+  const nama = sessionStorage.getItem("nama");
+  const usia = sessionStorage.getItem("usia");
+  const alamat = sessionStorage.getItem("alamat");
+  const hasil = sessionStorage.getItem("hasil");
+
+
+  document.getElementById('nama_pasien').textContent = `: ${nama}`;
+  document.getElementById('usia_pasien').textContent = `: ${usia}`;
+  document.getElementById('alamat_pasien').textContent = `: ${alamat}`;
+
+  if (hasil == "Berat") {
+    isRedBackground.value = true
+    isYellowBackground.value = false
+    isGreenBackground.value = false
+    textHasil.value = hasil;
+  } else if (hasil == "Ringan") {
+    isRedBackground.value = false
+    isYellowBackground.value = true
+    isGreenBackground.value = false
+    textHasil.value = hasil;
+  } else if (hasil == "Tidak Terkena") {
+    isRedBackground.value = false
+    isYellowBackground.value = false
+    isGreenBackground.value = true
+    textHasil.value = hasil;
+  }
+
 });
 
 // function

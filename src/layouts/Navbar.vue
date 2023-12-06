@@ -7,8 +7,7 @@
         </template>
         <template #default="{ isShowMenu }">
             <NavbarCollapse :isShowMenu="isShowMenu">
-                <NavbarLink isActive>Dashboard</NavbarLink>
-                <NavbarLink>Deteksi</NavbarLink>
+                <NavbarLink isActive>Deteksi</NavbarLink>
                 <NavbarLink>Hasil</NavbarLink>
             </NavbarCollapse>
         </template>
