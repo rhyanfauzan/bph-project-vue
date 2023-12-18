@@ -1,0 +1,35 @@
+.container {
+display: flex;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.666%; /* Adjust as needed */
+    border: 1px solid #ccc;
+}
+
+.col-8 {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.scrollable {
+    max-height: 100vh; /* Adjust max-height as needed */
+}
+
+.link {
+    color: blue;
+}
+
+.max-w-sm {
+    max-width: 100% !important;
+}
+

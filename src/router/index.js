@@ -9,22 +9,28 @@ const routes = [
     children: [{ path: "/login", name: "login-page", component: Login }],
   },
   // Admin Role Top Menu
-  {
-    path: "/admin",
-    component: Navbar,
-    redirect: "/admin/dashboard-page",
-    meta: { requiresAuth: true, adminOnly: true },
-    children: [
-      {
-        path: "dashboard-page",
-        name: "dashboard-page",
-        component: () => import("../pages/Dashboard.vue"),
-      },
-    ],
-  },
+  // {
+  //   path: "/admin",
+  //   component: Navbar,
+  //   redirect: "/admin/dashboard-page",
+  //   meta: { requiresAuth: true, adminOnly: true },
+  //   children: [
+  //     {
+  //       path: "dashboard-page",
+  //       name: "dashboard-page",
+  //       component: () => import("../pages/Home.vue"),
+  //     },
+  //   ],
+  // },
   // User Role Top Menu
+
   {
     path: "/",
+    name: "home-page",
+    component: () => import("../pages/Home.vue"),
+  },
+  {
+    path: "/deteksi",
     name: "deteksi-page",
     component: () => import("../pages/Deteksi.vue"),
   },
@@ -33,6 +39,7 @@ const routes = [
     name: "hasil-page",
     component: () => import("../pages/Hasil.vue"),
   },
+
   // Jika URL tidak ditemukan, redirect to /admin
   {
     path: "/:pathMatch(.*)*",

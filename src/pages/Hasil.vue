@@ -61,8 +61,6 @@ const isYellowBackground = ref(false)
 const isGreenBackground = ref(false)
 const textHasil = ref('')
 
-
-
 onMounted(() => {
   const nama = sessionStorage.getItem("nama");
   const usia = sessionStorage.getItem("usia");
