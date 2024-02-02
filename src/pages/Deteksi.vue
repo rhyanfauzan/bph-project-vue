@@ -328,7 +328,9 @@ function submit() {
 
 function fetchKNN() {
   const formdata = new FormData();
-  formdata.append('umur', usia.value);
+  formdata.append('nama', nama.value ?? '');
+  formdata.append('alamat', alamat.value ?? '');
+  formdata.append('umur', usia.value ?? 0);
   formdata.append('sakit_pinggang', sakitPinggang.value);
   formdata.append('mengejan', mengejan.value);
   formdata.append('urin_lemah', urinLemah.value);
